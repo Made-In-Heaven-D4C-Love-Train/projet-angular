@@ -1,0 +1,25 @@
+<h1 style="text-align: center;">Modifier un Pokémon</h1>
+<div class="bg-volume">
+    <div class="bg-unVolume">
+    <label for="">Nom du pokémon :</label>
+    <input style="margin-left: 4.5%;" type="text" class="" [(ngModel)]="pokemon.name">
+    </div>
+    <div class="bg-unVolume">
+    <label for="">Type du pokémon :</label>
+    <input style="margin-left: 4.5%;" type="text" class="" [(ngModel)]="pokemon.type">
+    </div>
+    <div class="bg-unVolume">
+        <label for="">URL du pokémon :</label>
+        <input style="margin-left: 5.5%;" type="text" class="" [(ngModel)]="pokemon.url">
+    </div>
+    <div >
+    <button style="margin-left: 35%; margin-top: 2%;" class="btn btn-outline-success valider" (click)="modif()">Ajouter</button>
+    </div>
+</div>
+
+
+
+<div class="row change" *ngIf="change">
+<div class="col-12">Les changements ont bien été enregistrés</div>
+
+</div>

@@ -1,0 +1,12 @@
+
+<div class="bg-unVolume">
+    <h5><img src="{{ getURL() }}"> {{ pokemon }}, type : {{ getType() }}
+
+    <div style="float: left; margin-top: 5%;">   
+<button style="color: #fff; margin-right: 10px; margin-left: 10px;" class="btn btn-warning margin-auto" routerLinkActive="active" routerLink="update/{{getId()}}"  (click)="modifier()">Modifier</button>
+        
+<button class="btn btn-danger margin-auto" (click)="supprimer()">Supprimer</button>
+</div>
+</h5>
+
+</div>

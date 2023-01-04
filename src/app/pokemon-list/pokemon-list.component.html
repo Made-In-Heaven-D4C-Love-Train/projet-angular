@@ -1,0 +1,16 @@
+<h1 style="text-align: center;">Liste des Pokémons</h1>
+<input type="text" placeholder="Rechercher un pokémon" [(ngModel)]="pokeSearch">
+<ul class="bg-volume" *ngIf="pokemons">
+    <app-pokemons *ngFor="let pokemon of getFilteredPokemons()"
+    
+    [pokemon]="pokemon.name"
+    [type]="pokemon.type"
+    [id]="pokemon.id"
+    [url]="pokemon.url">
+    
+    
+
+    </app-pokemons>
+
+    
+</ul>

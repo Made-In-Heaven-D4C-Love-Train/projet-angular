@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+//@import '~bootstrap/dist/css/bootstrap.css';
+
+body {
+    background-image: url(/assets/pokemon.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+h1{
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+}
+
+.valider{
+    background-color: green;
+    color: #fff;
+}
+
